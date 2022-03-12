@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Pergaminho.png');
+    background-size: cover;
+    
+}
+.area--title {
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    font-size: 50px;
+}
+.area--title .title {
+    font-family: 'Great Vibes', cursive;
+}
+.area--title img {
+    width: 200px;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.area--texto {
+    width: 600px;
+}
+.area--texto p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.area--vazia {
+    height: 400px;
+}
+.footer {
+    margin-top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer .icon--1 {
+    display: flex;
+    padding-bottom: 10px;
+    border-left: 2px solid #fff;
+    padding-left: 20%;
+}
+.footer .icon--2 {
+    display: flex;
+    padding-bottom: 10px;
+    border-left: 2px solid #fff;
+    padding-left: 20%;
+}
+.footer p {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer a {
+    text-decoration: none;
+    color: #000;
+}
+.footer a:hover {
+    color: red;
+}
+.footer img {
+    width: 35px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.footer .texto {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (min-width:240px) and (max-width:479px) {
+    body {
+        background-position: center;
+    }
+    .area--title {
+        margin-top: 140%;
+        font-size: 25px;
+    }
+    .area--title img {
+        width: 50px;
+        height: 60px;
+    }
+    .area--texto {
+        width: 200px;
+    }
+    .area--texto p {
+        font-size: 13px;
+        
+        
+    }
+    .area--vazia {
+        height: 400px;
+    }
+    .footer {
+        margin-bottom: 20%;
+        margin-top: 20%;
+    }
+    .footer img {
+        width: 30px;
+        height: 30px;
+    }
+    .footer .texto {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:480px) and (max-width:1079px) {
+    body {
+        background-position: center;
+    }
+    .area--title {
+        margin-top: 55%;
+        font-size: 30px;
+    }
+    .area--title img {
+        width: 80px;
+        height: 90px;
+    }
+    .area--texto {
+        width: 380px;
+    }
+    .area--texto p {
+        font-size: 15px;
+    }
+    
+    .footer img {
+        margin-top: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    .footer .texto {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width:1080px) and (max-width:1365px) {
+    body {
+        background-position: center;
+    }
+}
