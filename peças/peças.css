@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+header {
+    margin-top: 10%;
+}
+.area--title p {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+}
+.gallery {
+    position: absolute;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+}
+.gallery--steam {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+.gallery--item {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 5px;
+    }
+    /* Itens */
+    
+.gallery--item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+    }
+    
+.gallery--item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+    }
+    
+.gallery--item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+    }
+    
+.gallery--item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+    }
+    
+.gallery--item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+    }
+    
+    /* Backgrounds */
+    
+.bg-1 {
+    background-image: url('images/p1.jpg');
+    }
+    
+.bg-2 {
+    background-image: url('images/p2.jpg');
+    }
+    
+.bg-3 {
+    background-image: url('images/p3.jpg');
+    }
+    
+.bg-4 {
+    background-image: url('images/p4.jpg');
+    }
+    
+.bg-5 {
+    background-image: url('images/p5.jpg');
+    }
+    
+    
+    /* Controles */
+    
+.gallery--prev,
+    .gallery--next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+    cursor: pointer;
+    }
+    
+.gallery--prev {
+    left: 0;
+    background-image: url('images/img1-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: 10%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    }
+.gallery--next {
+    right: 0;
+    background-image: url('images/images-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 4%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    }
+    /* Sombras */
+    
+.gallery:before,
+.gallery:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 3;
+    }
+    
+.gallery:before {
+    left: 0;
+    background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    }
+    
+.gallery:after {
+    right: 0;
+    background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    }
+
+.desc--texto {
+        margin-left: 50px;
+        width: 400px;
+        margin-bottom: 40px;
+    }
+.desc--texto h1 {
+    color: goldenrod;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+.desc--texto h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+
+footer {
+    background-color: #000;
+    height: 400px;
+    color: #fff;
+    margin-top: 70%;
+}
+.footer .icon--1 {
+    display: flex;
+    padding-bottom: 20px;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.footer .icon--2 {
+    display: flex;
+    padding-bottom: 40px;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.footer p {
+    padding-left: 20px;
+    font-size: 18px;
+    
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer a:hover {
+    color: red;
+}
+.footer img {
+    width: 35px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.footer .texto {
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    border-left: 2px solid #fff;
+}
+.footer {
+    padding: 50px;
+    padding-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+@media (min-width:240px) and (max-width:479px) {
+    header {
+        margin-top: 0;
+    }
+    .area--title p {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .gallery {
+        margin-top: 60%;
+        width: 100%;
+        height: 300px;
+    }
+    .desc--texto {
+        margin-left: 10px;
+    }
+    .desc--texto h1 {
+        font-size: 20px;
+    }
+    .desc--texto h2 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .gallery--prev {
+        left: 0;
+        margin-left: 22%;
+        width: 50px;
+        height: 50px;
+        }
+    .gallery--next {
+        right: 0;
+        margin-right: 0;
+        width: 50px;
+        height: 50px;
+        }
+    footer {
+        height: 100px;
+
+        margin-top: 140%;
+    }
+    .footer .icon--1 {
+        padding-bottom: 0;
+        padding-left: 18px;
+    }
+    .footer .icon--2 {
+        padding-bottom: 0;
+        padding-left: 18px;
+    }
+    .footer p {
+        padding-left: 10px;
+        font-size: 10px;
+        
+    }
+    .footer img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    .texto h3 {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+    .footer {
+        padding: 0;
+        padding-left: 0;
+    }
+}
+
+
+@media (min-width:480px) and (max-width:1079px)  {
+    .area--title p {
+        font-size: 30px;
+    }
+    .gallery {
+        margin-top: 80%;
+        
+    }
+    .desc--texto {
+        margin-left: 20px;
+        width: 200px;
+    }
+    .desc--texto h1 {
+        font-size: 30px;
+    }
+    .desc--texto h2 {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .gallery--prev {
+        left: 0;
+        margin-left: 22%;
+        }
+    .gallery--next {
+        right: 0;
+        margin-right: 0;
+        }
+    footer {
+        height: 200px;
+        margin-top: 160%;
+    }
+    .footer img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .footer p {
+        padding-left: 10px;
+        font-size: 15px;
+        
+    }
+    .texto h3 {
+        font-size: 15px;
+    }
+    
+}
+
+
+@media (min-width:1080px) and (max-width:1365px) {
+    .gallery {
+        margin-top: 40%;
+        
+    }
+    footer {
+        height: 300px;
+        margin-top: 80%;
+    }
+}
+  
